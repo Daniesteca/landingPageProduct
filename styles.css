@@ -118,8 +118,12 @@ nav ul li a:hover:after{
 .right{
     position: absolute;
     right: 5%;
-    bottom: 20%;
+    bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
 
 .box{
     display: flex;
@@ -149,26 +153,30 @@ nav ul li a:hover:after{
     margin-left: 1.5rem 0 0 1rem;
 }
 .box .inner-box p{
-    font-size: 14 px;
+    font-size: 14px; 
     font-weight: 500;
 }
 
 .social-links{
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-
+    position: relative;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
 
 .social-links::before{
     content: "";
-    width: 80%;
+    width: 120px;
     height: 3px;
     position: absolute;
-    top:42%;
-    left: -150px;
+    left: -140px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #494234;
 }
+
 
 .social-links i{
     margin-left: 10px;
